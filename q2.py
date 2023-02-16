@@ -11,7 +11,7 @@ class Queueq2(Queue):
         return len(self.list)
 
     def insert(self, list):
-        if self.mysize() == self.size:
+        if self.mysize() > self.size:
             raise Exception("QueueOutOfRange")
         super().insert(list)
 
